@@ -1,0 +1,47 @@
+.town {
+	padding: 20px 1px 20px 1px;
+	text-align: center;
+	max-height: 120px;
+	background-color: rgb(249, 250, 252);
+	border-radius: 2px;
+
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+.town:hover,
+.town:focus,
+.town:active {
+	transform: scale(1.05);
+	background-color: rgb(235, 240, 252) !important;
+}
+
+[class*='col-'] {
+	float: left;
+	padding: 10px;
+}
+[class*='col-']:last-of-type {
+	padding-right: 10px;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+	.town {
+		font-size: 10px;
+		max-height: 75px; 
+	}
+}
+
+@media (max-width: 1024px) {
+	.town {
+		min-width: 60px;
+	}
+}

@@ -1,0 +1,11 @@
+.row {
+	text-align: center;
+}
+
+.both-nav {
+	text-decoration: underline;
+}
+
+.both-nav:focus {
+	color: cadetblue;
+}

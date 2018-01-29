@@ -1,0 +1,10 @@
+<br>
+
+<div class="row">
+    <a *ngFor="let town of towns; let i = index" class="col-md-2">
+      <div class="clearfix" *ngIf="i % 6 == 0"></div>
+      <div class="town" routerLink="/detail/{{ town.name }}" >
+		  <h6>{{ town.name }} </h6>
+		</div>
+    </a>
+</div>
